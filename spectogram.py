@@ -15,7 +15,7 @@ def main():
     audio = pyaudio.PyAudio()
     try:
         stream = audio.open(format=pyaudio.paInt16,
-                            channels=2,
+                            channels=1,
                             rate=RATE,
                             input=True,
                             frames_per_buffer=INPUT_FRAMES_PER_BLOCK
